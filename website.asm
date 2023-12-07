@@ -104,7 +104,7 @@ main:
   write STDOUT, bind_trace_msg, bind_trace_msg_len
   mov word [servaddr.sin_family], AF_INET
   mov dword [servaddr.sin_addr], INADDR_ANY
-  mov word [servaddr.sin_port], 8080
+  mov word [servaddr.sin_port], 14619
   bind [sockfd], servaddr.sin_family, sizeof_servaddr
   cmp rax, 0
   jl error
